@@ -13,9 +13,9 @@ const data = [
     { name: 'Marketing', value: 200 },
     { name: 'Development', value: 150 },
     { name: 'Support', value: 80 },
-    { name: 'HR' },
+    { name: 'HR', value: 50 },
 ];
-const LineGraph = () =>
+const BarGraph = () =>
 {
     const getOption = () =>
     {
@@ -48,7 +48,7 @@ const LineGraph = () =>
             series: [
                 {
                     name: 'DataSet-1',
-                    type: 'line',
+                    type: 'bar',
                     data: data.map((item) => item.value),
                     itemStyle: {
                         color: 'lightblue',
@@ -86,4 +86,4 @@ const LineGraph = () =>
     )
 }
 
-export default LineGraph
+export default BarGraph
